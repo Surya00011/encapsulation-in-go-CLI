@@ -19,4 +19,12 @@ func DeleteUser(email string) string{
         }
 	return "User Notfound"
 }
+func GetUserByEmail(email string) (*user.User, bool) {
+    for i := range users {
+        if users[i].GetEmail() == email {
+            return &users[i], true
+        }
+    }
+    return nil, false
+}
 
