@@ -5,23 +5,23 @@ type User struct{
 	email string
 }
 //constructor
-func userConstructor(name,email string) User{
+func UserConstructor(name,email string) User{
 	return User{name:name,email:email}
 }
 //getName
-func (user User) getName() string{
+func (user User) GetName() string{
 	return user.name
 }
 //getEmail
-func (user User) getEmail() string{
+func (user User) GetEmail() string{
 	return user.email
 }
 //setName
-func (user *User) setName(name string){
+func (user *User) SetName(name string){
 	user.name=name
 }
 //setEmail
-func (user *User) setEmail(email string){
+func (user *User) SetEmail(email string){
 	user.email=email
 }
 
